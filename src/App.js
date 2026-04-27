@@ -1,5 +1,5 @@
 import { Line } from "react-chartjs-2";
-import { Bar, Pie } from "react-chartjs-2";
+import { Pie } from "react-chartjs-2";
 import { useEffect, useState } from "react";
 import {
   Chart as ChartJS,
@@ -85,7 +85,7 @@ function App() {
   console.log("CLICK OK");
 
   try {
-    const res = await fetch("https://imc-backend.up.railway.app/imc", {
+    const res = await fetch("https://supportive-determination-production.up.railway.app/imc", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
@@ -121,7 +121,7 @@ function App() {
   // STATS GLOBAL (GET)
   // -----------------------
   const loadStats = async () => {
-    const res = await fetch("https://imc-backend.up.railway.app/stats");
+    const res = await fetch("https://supportive-determination-production.up.railway.app/stats");
     const data = await res.json();
     setStats(data);
   };
@@ -130,7 +130,7 @@ function App() {
   // DONNÉES POUR GRAPHIQUES
   // -----------------------
   const loadAll = async () => {
-    const res = await fetch("https://imc-backend.up.railway.app/all");
+    const res = await fetch("https://supportive-determination-production.up.railway.app/all");
     const data = await res.json();
     setAllData(data);
   };
