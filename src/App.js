@@ -310,6 +310,12 @@ const regressionData = {
     la taille estimée est :
     <strong> {estimationTaille(poids)} cm</strong>
   </p>
+       <p>
+    Équation de la droite de Régression linéaire:
+    <strong>
+      y = {a.toFixed(2)}x + {b.toFixed(2)}
+    </strong>
+  </p>
 </div>
       
       <div style={styles.card}>
