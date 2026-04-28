@@ -339,7 +339,7 @@ const regressionData = {
   <p>
     Équation de la droite de Régression linéaire:
     <strong>
-      y = {a.toFixed(2)}x + {b.toFixed(2)}
+      x = {b.toFixed(2)}y + {a.toFixed(2)}
     </strong>
   </p>
 </div>
