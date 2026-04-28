@@ -300,7 +300,6 @@ const regressionData = {
             onChange={(e) => setPoids(Number(e.target.value))}
             style={{marginLeft:"10px",padding:"5px"}}
            />
-         </label>
   <p>
     Pour un poids de <strong>{poids} kg</strong>,
     la taille estimée est :
@@ -310,7 +309,6 @@ const regressionData = {
       <div style={styles.card}>
         <h3>ESTIMATION DU POIDS CONNAISSANT LA TAILLE</h3>
       {/*champ pour que l'utilisateur entre sa taille*/}
-         <label >
            Entrez votre taille(cm):
            <input 
             type="number"
