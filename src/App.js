@@ -245,9 +245,9 @@ const regressionData = {
         />
 
         <input
-          placeholder="Âge(ex:35)"
+          placeholder="âge(ex:35)"
           value ={form.age}
-          onChange={(e) => setForm({ ...form, âge: e.target.value })}
+          onChange={(e) => setForm({ ...form, age: e.target.value })}
           style={styles.input}
         />
 
