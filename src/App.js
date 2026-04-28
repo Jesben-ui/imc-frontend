@@ -432,7 +432,7 @@ const styles = {
     background: "linear-gradient(135deg,#667eea,#764ba2)",
     minHeight: "100vh",
     color: "white",
-    width:80%,
+    width:"80%",
     margin:"auto",
   },
   title: {
