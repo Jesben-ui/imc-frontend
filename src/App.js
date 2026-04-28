@@ -310,8 +310,8 @@ const regressionData = {
       <div style={styles.card}>
         <h3>ESTIMATION DU POIDS CONNAISSANT LA TAILLE</h3>
       {/*champ pour que l'utilisateur entre sa taille*/}
-         <label>
-           Entrez votre taille(cm) en cm :
+         <label >
+           Entrez votre taille(cm):
            <input 
             type="number"
             value={taille}
