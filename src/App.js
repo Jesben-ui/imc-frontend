@@ -237,24 +237,24 @@ const regressionData = {
         <h2>COLLECTE DE DONNÉES</h2>
 
         <input
+          style={styles.input}
           placeholder="Poids(en Kg, ex:76)"
           value ={form.poids}
           onChange={(e) => setForm({ ...form, poids : e.target.value })}
-          style={styles.input}
         />
 
         <input
+          style={styles.input}
           placeholder="Taille(en cm,ex: 180)"
           value ={form.taille}
           onChange={(e) => setForm({ ...form, taille : e.target.value })}
-          style={styles.input}
         />
 
         <input
+          style={styles.input}
           placeholder="âge(ex:35)"
           value ={form.age}
           onChange={(e) => setForm({ ...form, age: e.target.value })}
-          style={styles.input}
         />
 
         <select
@@ -303,7 +303,7 @@ const regressionData = {
             type="number"
             value={poids}
             onChange={(e) => setPoids(Number(e.target.value))}
-            style={{marginLeft:"10px",padding:"5px",marginBottom:"15px"}}
+            style={{marginLeft:"10px",padding:"5px"}}
            />
          </label>
   <p>
@@ -328,7 +328,7 @@ const regressionData = {
             type="number"
             value={taille}
             onChange={(e) => setTaille(Number(e.target.value))}
-            style={{marginLeft:"10px",padding:"5px"}}
+            style={{marginLeft:"10px",padding:"5px",marginTop:"25px"}}
            />
          </label>
   <p>
@@ -386,6 +386,7 @@ const regressionData = {
       plugins: {
         legend: {
          display:true,
+          marginTop:"25px",
          position:"bottom"
       },
           Tooltip: {
