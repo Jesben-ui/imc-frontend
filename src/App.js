@@ -303,7 +303,7 @@ const regressionData = {
             type="number"
             value={poids}
             onChange={(e) => setPoids(Number(e.target.value))}
-            style={{marginLeft:"10px",padding:"5px"}}
+            style={{marginLeft:"10px",padding:"5px",marginBottom:"15px"}}
            />
          </label>
   <p>
@@ -449,6 +449,7 @@ const styles = {
     color: "black",
     padding: "20px",
     borderRadius: "12px",
+    marginTop:"15px",
     marginBottom: "30px",
     margin:"auto",
     boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
@@ -456,7 +457,7 @@ const styles = {
   input: {
     responsive: true,
     display: "block",
-    width: "80%",
+    width: "100%",
     margin: "auto",
     padding: "10px",
     borderRadius: "8px",
@@ -474,6 +475,7 @@ const styles = {
     cursor: "pointer",
   },
   statsGrid: {
+    responsive: true,
     display: "grid",
     gridTemplateColumns: "repeat(4,1fr)",
     gap: "10px",
@@ -490,6 +492,7 @@ const styles = {
     gap: "20px",
   },
   graphGrid: {
+    responsive: true,
     display: "grid",
     gridTemplateColumns: "repeat(2,1fr)",
     gap: "20px",
