@@ -430,40 +430,41 @@ const regressionData = {
 // -----------------------
 const styles = {
   page: {
-    responsive: true,
     padding: "20px",
     fontFamily: "Arial",
     background: "linear-gradient(135deg,#667eea,#764ba2)",
     minHeight: "100vh",
     color: "white",
-    width:"80%",
+    width:"100%",
     margin:"auto",
+    maxWidth: "1200px",
+    boxSizing: "border-box",
   },
   title: {
-    responsive: true,
     textAlign: "center",
     marginBottom: "20px",
   },
   card: {
-    responsive: true,
     background: "white",
     color: "black",
     padding: "20px",
     borderRadius: "12px",
     marginTop:"35px",
-    marginLeft:"20px",
+    marginLeft:"0",
     boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
+    width: "100%",
+    boxSizing: "border-box",
   },
   input: {
-    responsive: true,
     display: "block",
     width: "100%",
     padding: "10px",
     borderRadius: "8px",
     border: "1px solid #ccc",
+    boxSizing: "border-box",
+    fontSize: "16px",
   },
   button: {
-    responsive: true,
     padding: "10px",
     marginBottom:"20px",
     width: "100%",
@@ -474,13 +475,11 @@ const styles = {
     cursor: "pointer",
   },
   statsGrid: {
-    responsive: true,
     display: "grid",
-    gridTemplateColumns: "repeat(3,1fr)",
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
     gap: "10px",
   },
   statCard: {
-    responsive: true,
     background: "white",
     color: "black",
     padding: "15px",
@@ -490,11 +489,15 @@ const styles = {
     gap: "20px",
   },
   graphGrid: {
-    responsive: true,
     display: "grid",
-    gridTemplateColumns: "repeat(2,1fr)",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
     gap: "20px",
   },
+
+  mobile: {
+  width: "100%",
+  padding: "10px",
+},
 
 };
 
