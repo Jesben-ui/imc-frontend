@@ -229,6 +229,7 @@ const regressionData = {
 };
 
   return (
+    <div className="container">
     <div style={styles.page}>
       <h1 style={styles.title}>📊 CALCUL IMC</h1>
 
@@ -419,7 +420,7 @@ const regressionData = {
         </div>
       </div>
     </div>
-
+ </div>
   );
 }
 
@@ -481,6 +482,36 @@ const styles = {
     gridTemplateColumns: "repeat(2,1fr)",
     gap: "20px",
   },
+  /*contenu page*/
+  .container{
+  width:80%;
+  margin:auto;
+}
+
+/*bloc*/
+.card{
+  padding:20px;
+  background-color:lightgray;
+}
+/*formulaires*/
+.form{
+  width:60%;
+  margin:auto;
+  padding:20px;
+}
+/*Titres*/
+h3{
+  text-align:center;
+  font-size:24px;
+}
+/*Boutons*/
+button{
+  padding:10px 15px;
+  background-color:blue;
+  color:white;
+  border:none;
+  border-raduis:5px;
+}
 };
 
 export default App;
