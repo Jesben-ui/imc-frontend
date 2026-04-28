@@ -187,7 +187,7 @@ const estimationTaille = (poids) => {
 // fonction estimation poids (inverse de la régression)
 const estimationPoids = (taille) => {
   if (a === 0) return "N/A"; // Éviter division par zéro
-  return ((taille - b) / a).toFixed(1);
+  return ((taille - b) / a).toFixed(2);
 };
 
 // -----------------------
@@ -310,10 +310,10 @@ const regressionData = {
     la taille estimée est :
     <strong> {estimationTaille(poids)} cm</strong>
   </p>
-       <p>
+   <p>
     Équation de la droite de Régression linéaire:
     <strong>
-      y = {a.toFixed(2)}x + {b.toFixed(2)}
+      y = {a.toFixed(1)}x + {b.toFixed(1)}
     </strong>
   </p>
 </div>
