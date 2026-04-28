@@ -328,7 +328,7 @@ const regressionData = {
             type="number"
             value={taille}
             onChange={(e) => setTaille(Number(e.target.value))}
-            style={{marginLeft:"10px",padding:"5px",marginTop:"25px"}}
+            style={{marginLeft:"10px",padding:"5px"}}
            />
          </label>
   <p>
@@ -451,15 +451,13 @@ const styles = {
     padding: "20px",
     borderRadius: "12px",
     marginTop:"35px",
-    marginBottom: "30px",
-    margin:"auto",
+    marginLeft:"20px",
     boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
   },
   input: {
     responsive: true,
     display: "block",
     width: "100%",
-    marginLet:"10px",
     padding: "10px",
     borderRadius: "8px",
     border: "1px solid #ccc",
@@ -478,9 +476,8 @@ const styles = {
   statsGrid: {
     responsive: true,
     display: "grid",
-    gridTemplateColumns: "repeat(4,1fr)",
+    gridTemplateColumns: "repeat(3,1fr)",
     gap: "10px",
-    marginBottom: "20px",
   },
   statCard: {
     responsive: true,
