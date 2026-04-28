@@ -231,16 +231,16 @@ const regressionData = {
         <h2>COLLECTE DE DONNÉES</h2>
 
         <input
-          placeholder="Poids"
+          placeholder="Poids(en Kg)"
           value ={form.poids}
-          onChange={(e) => setForm({ ...form, poids en kg: e.target.value })}
+          onChange={(e) => setForm({ ...form, poids : e.target.value })}
           style={styles.input}
         />
 
         <input
-          placeholder="Taille"
+          placeholder="Taille(en cm,ex: 180)"
           value ={form.taille}
-          onChange={(e) => setForm({ ...form, taille en cm: e.target.value })}
+          onChange={(e) => setForm({ ...form, taille : e.target.value })}
           style={styles.input}
         />
 
