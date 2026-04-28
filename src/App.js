@@ -174,22 +174,21 @@ for (let i = 0; i < n; i++) {
   sumXX += xValues[i] * xValues[i];
 }
 
-const a =
-  (n * sumXY - sumX * sumY) /
-  (n * sumXX - sumX * sumX);
-
-const b =
-  (sumY - a * sumX) / n;
+// Protection contre la division par zéro
+const denominator = n * sumXX - sumX * sumX;
+const a = denominator !== 0 ? (n * sumXY - sumX * sumY) / denominator : 0;
+const b = (sumY - a * sumX) / n;
 
 // fonction estimation
 const estimationTaille = (poids) => {
   return (a * poids + b).toFixed(1);
-  };
-  // fonction estimation poids (inverse de la régression)
+};
+
+// fonction estimation poids (inverse de la régression)
 const estimationPoids = (taille) => {
+  if (a === 0) return "N/A"; // Éviter division par zéro
   return ((taille - b) / a).toFixed(1);
 };
-  
 
 // -----------------------
 // COURBE TAILLE EN FONCTION DU POIDS 
@@ -207,7 +206,7 @@ const regressionData = {
       showLine: false,
     },
 
-    {
+    xValues.length > 0 && {
       label: "Régression linéaire",
       data: [
         {
@@ -226,7 +225,7 @@ const regressionData = {
       pointRadius: 0,
       type: "line",
     },
-  ],
+  ].filter(Boolean), // Enlève les valeurs false
 };
 
   return (
@@ -372,45 +371,45 @@ const regressionData = {
 
         <div style={styles.card}>
           <h3>CAMEMBERT DES ETATS</h3>
-   <Pie
-  key={allData.length}
-  data={imcData}
-  options={{
-    plugins: {
-      legend: {
-       display:true,
-       position:"bottom"
-    },
-        Tooltip: {
-          callbacks:{
-           label: function (context) {
-            return `IMC: ${context.raw}`;
+          <Pie
+    key={allData.length}
+    data={imcData}
+    options={{
+      plugins: {
+        legend: {
+         display:true,
+         position:"bottom"
+      },
+          Tooltip: {
+            callbacks:{
+             label: function (context) {
+              return `IMC: ${context.raw}`;
+            },
           },
         },
       },
-    },
-      scales: {
-        y: {
-          beginAtZero: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+        },
       },
-    },
-  }}
-/>
+    }}
+  />
 
- {/* SYNTHESE */}
-      {allData.length > 0 &&(
-        <div style = {{
-          marginTop: "15px",
-          padding: "15px",
-          borderRadius:"10px",
-          background: "#f8fafc",
-          color:"#111",
-          textAlign:"center",
-          fontWeight: "bold"
-        }}>
-          {message}
-        </div>
-      )}
+          {/* SYNTHESE */}
+          {allData.length > 0 &&(
+            <div style = {{
+              marginTop: "15px",
+              padding: "15px",
+              borderRadius:"10px",
+              background: "#f8fafc",
+              color:"#111",
+              textAlign:"center",
+              fontWeight: "bold"
+            }}>
+              {message}
+            </div>
+          )}
         </div>
       </div>
     </div>
