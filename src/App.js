@@ -184,7 +184,12 @@ const b =
 // fonction estimation
 const estimationTaille = (poids) => {
   return (a * poids + b).toFixed(1);
+  // fonction estimation poids (inverse de la régression)
+const estimationPoids = (taille) => {
+  return ((taille - b) / a).toFixed(1);
 };
+};
+  
 
 // -----------------------
 // COURBE TAILLE EN FONCTION DU POIDS 
@@ -300,12 +305,14 @@ const regressionData = {
             onChange={(e) => setPoids(Number(e.target.value))}
             style={{marginLeft:"10px",padding:"5px"}}
            />
+         </label>
   <p>
     Pour un poids de <strong>{poids} kg</strong>,
     la taille estimée est :
     <strong> {estimationTaille(poids)} cm</strong>
   </p>
-
+      
+    <label>
       <div style={styles.card}>
         <h3>ESTIMATION DU POIDS CONNAISSANT LA TAILLE</h3>
       {/*champ pour que l'utilisateur entre sa taille*/}
