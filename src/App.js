@@ -334,7 +334,7 @@ const regressionData = {
   <p>
     Pour une taille de <strong>{taille} cm</strong>,
     le poids estimée est :
-    <strong> {estimationPoids(taille)} kg</strong>
+    <strong> {estimationPoids((-1)*taille)} kg</strong>
   </p>
   <p>
     Équation de la droite de Régression linéaire:
