@@ -273,8 +273,6 @@ const regressionData = {
     background: "#f1f5f9",
     borderRadius: "10px",
     textAlign: "center",
-    width:"80%",
-    margin:"auto"
   }}>
     <h3>Votre IMC : {result.imc}</h3>
     <p>Catégorie : {result.categorie}</p>
@@ -447,12 +445,13 @@ const styles = {
     padding: "20px",
     borderRadius: "12px",
     marginBottom: "20px",
+    margin:"auto",
     boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
   },
   input: {
     display: "block",
     width: "100%",
-    margin: "10px 0",
+    margin: "auto",
     padding: "10px",
     borderRadius: "8px",
     border: "1px solid #ccc",
@@ -484,11 +483,6 @@ const styles = {
     gridTemplateColumns: "repeat(2,1fr)",
     gap: "20px",
   },
-form:{
-  width:60%,
-  margin:"auto",
-  padding:"20px",
-},
 
 };
 
