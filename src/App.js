@@ -233,21 +233,21 @@ const regressionData = {
         <input
           placeholder="Poids"
           value ={form.poids}
-          onChange={(e) => setForm({ ...form, poids: e.target.value })}
+          onChange={(e) => setForm({ ...form, poids en kg: e.target.value })}
           style={styles.input}
         />
 
         <input
           placeholder="Taille"
           value ={form.taille}
-          onChange={(e) => setForm({ ...form, taille: e.target.value })}
+          onChange={(e) => setForm({ ...form, taille en cm: e.target.value })}
           style={styles.input}
         />
 
         <input
           placeholder="Âge"
           value ={form.age}
-          onChange={(e) => setForm({ ...form, age: e.target.value })}
+          onChange={(e) => setForm({ ...form, âge: e.target.value })}
           style={styles.input}
         />
 
