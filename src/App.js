@@ -184,10 +184,10 @@ const b =
 // fonction estimation
 const estimationTaille = (poids) => {
   return (a * poids + b).toFixed(1);
+  };
   // fonction estimation poids (inverse de la régression)
 const estimationPoids = (taille) => {
   return ((taille - b) / a).toFixed(1);
-};
 };
   
 
