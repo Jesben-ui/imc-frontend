@@ -485,6 +485,7 @@ const styles = {
     padding: "15px",
     borderRadius: "10px",
     textAlign: "center",
+    gap: "20px",
   },
   graphGrid: {
     display: "grid",
