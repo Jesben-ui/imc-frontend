@@ -269,7 +269,7 @@ const regressionData = {
         {result && (
   <div style={{
     responsive: true,
-    marginTop: "15px",
+    marginTop: "25px",
     padding: "15px",
     background: "#f1f5f9",
     borderRadius: "10px",
@@ -465,6 +465,7 @@ const styles = {
   button: {
     responsive: true,
     padding: "10px",
+    marginBottom:"20px",
     width: "100%",
     background: "#6366f1",
     color: "white",
@@ -483,6 +484,7 @@ const styles = {
     background: "white",
     color: "black",
     padding: "15px",
+    marginTop:"25px",
     borderRadius: "10px",
     textAlign: "center",
     gap: "20px",
