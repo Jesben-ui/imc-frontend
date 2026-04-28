@@ -268,6 +268,7 @@ const regressionData = {
         <button style={styles.button} onClick={sendData}>Envoyer</button>
         {result && (
   <div style={{
+    responsive: true,
     marginTop: "15px",
     padding: "15px",
     background: "#f1f5f9",
@@ -381,6 +382,7 @@ const regressionData = {
     key={allData.length}
     data={imcData}
     options={{
+      responsive: true,
       plugins: {
         legend: {
          display:true,
@@ -427,6 +429,7 @@ const regressionData = {
 // -----------------------
 const styles = {
   page: {
+    responsive: true,
     padding: "20px",
     fontFamily: "Arial",
     background: "linear-gradient(135deg,#667eea,#764ba2)",
@@ -436,27 +439,31 @@ const styles = {
     margin:"auto",
   },
   title: {
+    responsive: true,
     textAlign: "center",
     marginBottom: "20px",
   },
   card: {
+    responsive: true,
     background: "white",
     color: "black",
     padding: "20px",
     borderRadius: "12px",
-    marginBottom: "20px",
+    marginBottom: "30px",
     margin:"auto",
     boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
   },
   input: {
+    responsive: true,
     display: "block",
-    width: "100%",
+    width: "80%",
     margin: "auto",
     padding: "10px",
     borderRadius: "8px",
     border: "1px solid #ccc",
   },
   button: {
+    responsive: true,
     padding: "10px",
     width: "100%",
     background: "#6366f1",
@@ -472,6 +479,7 @@ const styles = {
     marginBottom: "20px",
   },
   statCard: {
+    responsive: true,
     background: "white",
     color: "black",
     padding: "15px",
