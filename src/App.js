@@ -34,7 +34,7 @@ function App() {
   const [stats, setStats] = useState(null);
   const [allData, setAllData] = useState([]);
   const [result, setResult] = useState(null);
-  const [poids, setPoids] = useState(" ");
+  const [poids, setPoids] = useState(80);
 
   const total = allData.length || 1;
 
@@ -289,16 +289,17 @@ const regressionData = {
 )}
 
       <div style={styles.card}>
-  <h3>ESTIMATION D'UNE TAILLE CONNAISSANT LE POIDS</h3>
+        <h3>ESTIMATION D'UNE TAILLE CONNAISSANT LE POIDS</h3>
       {/*champ pour que l'utilisateur entre son poids*/}
-<label>
-  Entrez votre poids(kg):
-  <input type="number"
-    value={poids}
-    onChange={(e) => setPoids(Number(e.target.value))}
-      style={{marginLeft:"10px",padding:"5px"}}
-  />
-</label>
+         <label>
+           Entrez votre poids(kg):
+           <input 
+            type="number"
+            value={poids}
+            onChange={(e) => setPoids(Number(e.target.value))}
+            style={{marginLeft:"10px",padding:"5px"}}
+           />
+         </label>
   <p>
     Pour un poids de <strong>{poids} kg</strong>,
     la taille estimée est :
