@@ -311,11 +311,12 @@ const regressionData = {
     la taille estimée est :
     <strong> {estimationTaille(poids)} cm</strong>
   </p>
+</div>
       
-    <label>
       <div style={styles.card}>
         <h3>ESTIMATION DU POIDS CONNAISSANT LA TAILLE</h3>
       {/*champ pour que l'utilisateur entre sa taille*/}
+        <label>
            Entrez votre taille(cm):
            <input 
             type="number"
@@ -329,7 +330,6 @@ const regressionData = {
     le poids estimée est :
     <strong> {estimationPoids(taille)} kg</strong>
   </p>
-
   <p>
     Équation de la droite de Régression linéaire:
     <strong>
